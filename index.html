@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Ruben</title>
+    <link rel="stylesheet" href="./css/tail.css">
+</head>
+<body class="">
+  <!-- Navbar --> 
+  <nav class="w-full h-24 bg-primary-400 fixed z-20">
+    <div class="container h-full mx-auto flex justify-between items-center">
+      <div class=" h-16">
+        <img class="h-full px-4" src="/img/icon-nav.png" alt="">
+      </div>
+      <article class="hidden md:flex justify-between lg:justify-evenly w-2/5 font-bold space-x-1 text-white items-center">
+        <div class="flex">
+          <a href="#me" class="px-4">About me</a>
+          <a href="#stack" class="px-4">Stack</a>
+          <a href="#last" class="px-4">Last Proyect</a>
+        </div>                           
+      </article> 
+      <div class="mr-4 md:hidden">
+        <button class="mobile-menu-btn">
+          <img class="h-12" src="/img/icon-menu.png" alt="">
+        </button>
+      </div>  
+    </div>
+    <article class="mobile-menu hidden text-white flex flex-row-reverse pr-1">
+      <div class="absolute z-20 bg-primary-400 w-2/3 rounded-b-lg">
+        <a href="#me" class="mx-4 p-2 hover:bg-primary-200 block border-b border-secondary-300/80">About me</a>
+        <a href="#stack" class="mx-4 p-2 hover:bg-primary-200 block border-b border-secondary-300/80">Stack</a>
+        <a href="#last" class="mx-4 mb-2 p-2  hover:bg-primary-200 block border-b border-secondary-300/80">Last Proyect</a>
+      </div>   
+    </article>
+  </nav>
+  <div class="h-24"></div>
+  <!-- Hero -->
+  <section class="bg-mobil md:bg-desktop h-80 "></section>
+  <main class="container mx-auto font-['Consolas']">
+    <!-- about me -->
+    <section id="me" class="grid md:grid-cols-3 gap-10 mt-10 py-8 border-dashed border-y-4">
+      <div class="md:col-span-3 mx-2 p-2">
+        <h2 class="text-center font-['Brush_Script_MT'] text-4xl font-bold">About me</h2>
+      </div>
+      <div class="md:col-span-2 mx-2 p-2 md:order-last">
+        <h2 class="text-center mb-4 text-2xl font-semibold">Hola, Soy Rubén</h2>
+        <div class="rounded-md border border-primary-300 shadow-lg shadow-primary-200 px-4 py-8">
+          <p>Desarrollador Web, recientemente titulado de Inacap en Chile. Me considero un apasionado de la programación, comprometido con todo lo que hago y deseoso de contribuir a cada 
+            proyecto y reto que se presente. Te invito a navegar más hacia abajo y ver mi último proyecto.</p>
+        </div>
+      </div>
+      <div class="grid place-content-center">
+        <img src="/img/face.svg" alt="" class="h-48 rounded-lg">
+      </div>     
+    </section>
+    <!-- stack -->
+    <section id="stack" class="grid md:grid-cols-4 xl:grid-cols-5 gap-10 my-6 py-8 border-dashed border-b-4 text-center">
+      <div class="md:col-span-4 xl:col-span-5 mx-2 p-4">
+        <h2 class="mb-4 font-['Brush_Script_MT'] text-4xl font-bold">Stack</h2>
+      </div>
+      <div class="grid place-content-center mx-4 p-2 border border-primary-500 rounded-md transition ease-in-out duration-300 md:hover:scale-110 hover:bg-primary-500/80 hover:text-white shadow-md shadow-primary-300/40 ">
+        <div class="py-8">
+          <svg role="img" viewBox="0 0 24 24" class="h-20 fill-[#F7DF1E] mb-4" xmlns="http://www.w3.org/2000/svg"><title>JavaScript</title><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+          <p>JavaScript</p>
+        </div>
+      </div>
+      <div class="grid place-content-center mx-4 p-2 border border-primary-500 rounded-md transition ease-in-out duration-300 md:hover:scale-110 hover:bg-primary-500/80 hover:text-white shadow-md shadow-primary-300/40">
+        <div class="py-8">
+          <svg role="img" viewBox="0 0 24 24" class="h-20 fill-[#339933] mb-4" xmlns="http://www.w3.org/2000/svg"><title>Node.js</title><path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z"/></svg>
+          <p>Node.js</p>
+        </div>
+      </div>
+      <div class="grid place-content-center mx-4 p-2 border border-primary-500 rounded-md transition ease-in-out duration-300 md:hover:scale-110 hover:bg-primary-500/80 hover:text-white shadow-md shadow-primary-300/40">
+        <div class="py-8">
+          <svg role="img" viewBox="0 0 24 24" class="h-20 fill-[#000000] mb-4" xmlns="http://www.w3.org/2000/svg"><title>Express</title><path d="M24 18.588a1.529 1.529 0 01-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 01-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 011.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 011.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 000 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 002.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 01-2.589 3.957 6.272 6.272 0 01-7.306-.933 6.575 6.575 0 01-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 010 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278-2.882-.04-4.944 2.094-5.071 5.264z"/></svg>
+          <p>Express.js</p>
+        </div>
+      </div>
+      <div class="grid place-content-center mx-4 p-2 border border-primary-500 rounded-md transition ease-in-out duration-300 md:hover:scale-110 hover:bg-primary-500/80 hover:text-white shadow-md shadow-primary-300/40">
+        <div class="py-8">
+          <svg role="img" viewBox="0 0 24 24" class="h-20 fill-[#06B6D4] mb-4" xmlns="http://www.w3.org/2000/svg"><title>Tailwind CSS</title><path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/></svg>
+          <p>Tailwind CSS</p>
+        </div>
+      </div>
+      <div class="grid place-content-center mx-4 p-2 border border-primary-500 rounded-md transition ease-in-out duration-300 md:hover:scale-110 hover:bg-primary-500/80 hover:text-white shadow-md shadow-primary-300/40">
+        <div class="py-8">
+          <svg role="img" viewBox="0 0 24 24" class="h-20 fill-[#F05032] mb-4" xmlns="http://www.w3.org/2000/svg"><title>Git</title><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/></svg>
+          <p class="">Git</p>
+        </div>
+      </div>
+      <div class="grid place-content-center mx-4 p-2 border border-primary-500 rounded-md transition ease-in-out duration-300 md:hover:scale-110 hover:bg-primary-500/80 hover:text-white shadow-md shadow-primary-300/40">
+        <div class="py-8">
+          <svg role="img" viewBox="0 0 24 24" class="h-20 fill-[#3178C6] mb-4" xmlns="http://www.w3.org/2000/svg"><title>TypeScript</title><path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"/></svg>
+          <p>TypeScript</p>
+        </div>
+      </div>
+      <div class="grid place-content-center mx-4 p-2 border border-primary-500 rounded-md transition ease-in-out duration-300 md:hover:scale-110 hover:bg-primary-500/80 hover:text-white shadow-md shadow-primary-300/40">
+        <div class="py-8">
+          <svg role="img" viewBox="0 0 24 24" class="h-20 fill-[#4FC08D] mb-4" xmlns="http://www.w3.org/2000/svg"><title>Vue.js</title><path d="M24,1.61H14.06L12,5.16,9.94,1.61H0L12,22.39ZM12,14.08,5.16,2.23H9.59L12,6.41l2.41-4.18h4.43Z"/></svg>
+          <p class="">Vue.js</p>
+        </div>
+      </div>
+      <div class="grid place-content-center mx-4 p-2 border border-primary-500 rounded-md transition ease-in-out duration-300 md:hover:scale-110 hover:bg-primary-500/80 hover:text-white shadow-md shadow-primary-300/40">
+        <div class="py-8">
+          <svg role="img" viewBox="0 0 24 24" class="h-20 fill-[#7952B3] mb-4" xmlns="http://www.w3.org/2000/svg"><title>Bootstrap</title><path d="M11.77 11.24H9.956V8.202h2.152c1.17 0 1.834.522 1.834 1.466 0 1.008-.773 1.572-2.174 1.572zm.324 1.206H9.957v3.348h2.231c1.459 0 2.232-.585 2.232-1.685s-.795-1.663-2.326-1.663zM24 11.39v1.218c-1.128.108-1.817.944-2.226 2.268-.407 1.319-.463 2.937-.42 4.186.045 1.3-.968 2.5-2.337 2.5H4.985c-1.37 0-2.383-1.2-2.337-2.5.043-1.249-.013-2.867-.42-4.186-.41-1.324-1.1-2.16-2.228-2.268V11.39c1.128-.108 1.819-.944 2.227-2.268.408-1.319.464-2.937.42-4.186-.045-1.3.968-2.5 2.338-2.5h14.032c1.37 0 2.382 1.2 2.337 2.5-.043 1.249.013 2.867.42 4.186.409 1.324 1.098 2.16 2.226 2.268zm-7.927 2.817c0-1.354-.953-2.333-2.368-2.488v-.057c1.04-.169 1.856-1.135 1.856-2.213 0-1.537-1.213-2.538-3.062-2.538h-4.16v10.172h4.181c2.218 0 3.553-1.086 3.553-2.876z"/></svg>
+          <p class="">Bootstrap</p>
+        </div>
+      </div>
+    </section>
+    <!-- last Proyect -->
+    <section id="last" class="grid md:grid-cols-3 gap-10 my-6 pt-8 pb-14 border-dashed border-b-4">
+      <div class="md:col-span-3 mx-2 p-2">
+        <h2 class="text-center font-['Brush_Script_MT'] text-4xl font-bold">Last proyect</h2>
+      </div>
+      <div class="grid place-content-center mx-4">
+        <img src="/img/proyect.webp" alt="" class="rounded-lg">
+      </div>
+      <div class="grid md:col-span-2 place-content-center mx-2 p-2">
+        <h2 class="text-center mb-4 text-2xl font-semibold">Ur Games Score</h2>
+        <div class="rounded-md border border-primary-300 shadow-lg shadow-primary-200 px-4 py-8">
+          <p>Página web para realizar reseñas de videojuegos, a través de una valoración que considera una puntuación y un comentario. 
+            Es posible visualizar la información de los videojuegos sin registrarse, sin embargo, toda reseña de un videojuego requiere realizar un registro de usuario con un formulario simple.</p>
+        </div>
+        <div class=" flex justify-center text-center mt-6">
+          <div class="px-4 py-2 mr-4 rounded-md bg-secondary-300 transition ease-in-out duration-300 hover:scale-110 hover:bg-secondary-100">
+            <a href="" >Visitar Sitio</a>
+          </div>
+          <div class="px-8 py-2 mr-4 rounded-md bg-secondary-300 transition ease-in-out duration-300 hover:scale-110 hover:bg-secondary-100">
+            <a href="" >Ver Codigo</a>
+          </div>            
+        </div>
+      </div>        
+    </section>
+  </main>
+  <footer class="w-full h-32 bg-primary-400">
+    <div class="container h-full mx-auto flex justify-between items-center">
+      <div class=" h-16">
+        <img class="h-full px-4" src="/img/icon-nav.png" alt="">
+      </div>
+      <div class="flex flex-col text-white px-4">
+        <div class="flex items-center py-2">
+          <svg role="img" viewBox="0 0 24 24" class="h-4 fill-[#181717] mr-2" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          <a href="https://github.com/ruben0032" target="_blank">GitHub</a>
+        </div>
+        <div class="flex items-center py-2">
+          <svg role="img" viewBox="0 0 24 24" class="h-4 fill-[#0A66C2] mr-2" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <a href="https://www.linkedin.com/in/ruben-quispe-juniorweb/" target="_blank">LinkedIn</a>
+        </div>
+        <div class="flex items-center py-2">
+          <svg role="img" viewBox="0 0 24 24" class="h-4 fill-[#EA4335] mr-2" xmlns="http://www.w3.org/2000/svg"><title>Gmail</title><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+          <a href="mailto:notienesuncorreo@gmail.com?Subject=Contacto Portafolio" target="_blank">Gmail</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/index.js"></script>
+        
+</body>
+</html>
